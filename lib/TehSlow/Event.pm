@@ -27,7 +27,7 @@ sub TO_JSON {
     my $self = shift;
 
     return {
-        event => $self->type,
+        event => $self->event,
         time  => $self->time,
         map {
             my $value = $self->$_;
